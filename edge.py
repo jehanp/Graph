@@ -10,6 +10,10 @@ class Edge:
         self._v:int=v
         self._is_directed:bool=is_directed
 
+        self.is_discovery_edge:bool=False
+        self.is_back_edge:bool=False
+        self.is_explored:bool=self.is_discovery_edge or self.is_back_edge
+
         Edge.id_counter+=1
 
     @property

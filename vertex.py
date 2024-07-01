@@ -12,6 +12,8 @@ class Vertex:
         self.i_in:Edge=[]
         self.i_out:Edge=[]
 
+        self.is_explored:bool=False
+
         Vertex.id_counter+=1
 
     @property 
